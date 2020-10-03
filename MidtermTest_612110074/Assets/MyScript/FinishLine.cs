@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class FinishLine : MonoBehaviour
 {
 
-    float time = 5;
+    
 
     // Use this for initialization
     void Start()
@@ -17,12 +17,7 @@ public class FinishLine : MonoBehaviour
 
     void Update()
     {
-        time -= Time.deltaTime;
-
-        if(time <= 0)
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
+       
     }
 
     void OnTriggerEnter(Collider Finish)
